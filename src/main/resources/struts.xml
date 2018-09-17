@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+        "http://struts.apache.org/dtds/struts-2.5.dtd">
+
+<struts>
+    <!--指定由spring负责action对象的创建-->
+    <constant name="struts.objectFactory" value="spring"/>
+
+    <!--&lt;!&ndash;所有匹配*.actiond的请求都由struct2处理&ndash;&gt;-->
+    <!--<constant name="struts.action.extension" value="action"/>-->
+
+    <!--&lt;!&ndash;是否启用开发模式(开发时设置为true,生产时设置为false)&ndash;&gt;-->
+    <!--<constant name="struts.devMode" value="true"/>-->
+
+    <!--&lt;!&ndash;structs配置文件改动后，是否重新加载(开发时设置为true,生产时设置为false)&ndash;&gt;-->
+    <!--<constant name="struts.configuration.xml.reload" value="true"/>-->
+
+    <!--&lt;!&ndash;设置浏览器是否缓存静态内容(开发时设置为false,生产时设置为true)&ndash;&gt;-->
+    <!--<constant name="struts.serve.static.browserCache" value="false"/>-->
+
+    <!--请求参数的编码方式-->
+    <constant name="struts.i18n.encoding" value="utf-8"/>
+
+    <!--&lt;!&ndash;每次http请求都重新加载资源文件，有助于开发(开发时设置为true,生产时设置为false)&ndash;&gt;-->
+    <!--<constant name="struts.i18n.reload" value="true"/>-->
+
+    <!--&lt;!&ndash;文件上传最大值&ndash;&gt;-->
+    <!--<constant name="struts.multipart.maxSize" value="104857600"/>-->
+
+    <!--&lt;!&ndash;让struts2支持动态方法调用，使用叹号访问方法&ndash;&gt;-->
+    <!--<constant name="struts.enable.DynamicMethodInvocation" value="true"/>-->
+
+    <!--&lt;!&ndash;action名称中是否还用斜线&ndash;&gt;-->
+    <!--<constant name="struts.enable.SlashesInActionNames" value="false"/>-->
+
+    <!--&lt;!&ndash;允许标签使用表达式语法&ndash;&gt;-->
+    <!--<constant name="struts.tag.altSyntax" value="true"/>-->
+
+    <!--&lt;!&ndash;对于webLogin,Orion,OC4J,此属性值应设为true&ndash;&gt;-->
+    <!--<constant name="struts.dispatcher.parametersWorkaround" value="false"/>-->
+
+    <!--<package name="basePackage" extends="struts-default">-->
+        <!--<action name="rankAction" class="action.RankAction" method="test">-->
+            <!--<result name="success">/index.jsp</result>-->
+        <!--</action>-->
+    <!--</package>-->
+
+</struts>
